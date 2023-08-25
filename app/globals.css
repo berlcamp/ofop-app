@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .app__main {
-  @apply mt-20 pb-0
+  @apply mt-20 pb-10
 }
 .app__home {
   @apply pb-0
