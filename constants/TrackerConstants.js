@@ -127,5 +127,6 @@ export const reqList = [
   { label: 'Cert. Residency', isComplete: false },
   { label: 'Cert. (indigency, pwd, sp)', isComplete: false },
   { label: 'LCR/PSA', isComplete: false },
-  { label: 'Latest Report', isComplete: false }
+  { label: 'Latest Report', isComplete: false },
+  { label: 'Statement of Account', isComplete: false }
 ]

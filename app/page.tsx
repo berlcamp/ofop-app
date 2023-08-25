@@ -43,7 +43,11 @@ const RequirementsCheckbox = ({ userId, req, userRequirements }: { userId: strin
           ? <CheckCircleIcon className='w-4 h-4 text-green-500'/>
           : <XMarkIcon className='w-4 h-4 text-red-500'/>
       }
-      <span>{req.label}</span>
+      {
+        req.label === 'Latest Report'
+          ? <span>Copy of Report Card/Grades</span>
+          : <span>{req.label}</span>
+      }
     </div>
   )
 }

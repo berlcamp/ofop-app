@@ -59,6 +59,7 @@ const Filters = ({ setFilterKeyword, setFilterBarangay, setFilterRequirements }:
               className="app__filter_input"/>
           </div>
           <div className='app__filter_container inline-flex'>
+            <MagnifyingGlassIcon className="w-4 h-4 mr-1"/>
             <span className='text-sm text-gray-500'>Barangay</span>
             <select
               value={barangay}
