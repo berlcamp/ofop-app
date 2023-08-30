@@ -74,6 +74,7 @@ const Page: React.FC = () => {
       let query = supabase
         .from('ofop_scholars')
         .select('*', { count: 'exact' })
+        .eq('batch', 'province')
 
       // Full text search
       if (filterKeyword !== '') {
@@ -125,6 +126,7 @@ const Page: React.FC = () => {
       let query = supabase
         .from('ofop_scholars')
         .select('*', { count: 'exact' })
+        .eq('batch', 'province')
 
       // Full text search
       if (filterKeyword !== '') {
