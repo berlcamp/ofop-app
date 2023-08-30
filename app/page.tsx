@@ -243,7 +243,7 @@ const Page: React.FC = () => {
                           {
                             (item.fullname && item.fullname !== '')
                               ? capitalizeWords(item.fullname)
-                              : capitalizeWords(item.firstname + ' ' + item.middlename + ' ' + item.lastname)
+                              : capitalizeWords(item.firstname + ' ' + (item.middlename && item.middlename !== '' ? item.middlename : '') + ' ' + item.lastname)
                           }
                         </div>
                         <div className='font-light'>No. {item.number}</div>
